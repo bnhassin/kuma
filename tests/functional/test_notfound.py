@@ -12,6 +12,7 @@ ARTICLE_TITLE_SUFIX = " | MDN"
 @pytest.mark.smoke
 @pytest.mark.nodata
 @pytest.mark.nondestructive
+@pytest.mark.maintenance_mode
 def test_is_not_found_status(base_url, selenium):
     NotFoundPage(selenium, base_url).open()
     assert_valid_url(selenium.current_url, status_code=requests.codes.not_found)
@@ -20,6 +21,7 @@ def test_is_not_found_status(base_url, selenium):
 @pytest.mark.smoke
 @pytest.mark.nodata
 @pytest.mark.nondestructive
+@pytest.mark.maintenance_mode
 def test_is_expected_content(base_url, selenium):
     page = NotFoundPage(selenium, base_url).open()
     assert (ARTICLE_NAME + ARTICLE_TITLE_SUFIX) == selenium.title, 'page title does not match expected'

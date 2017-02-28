@@ -61,6 +61,11 @@ class BasePage(Page):
             signin_link = self.find_element(*self._signin_locator)
             signin_link.click()
 
+        # is the sign-in button displayed?
+        @property
+        def is_signin_displayed(self):
+            return self.find_element(*self._signin_locator).is_displayed()
+
         # nav is displayed?
         @property
         def is_menu_displayed(self):

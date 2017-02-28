@@ -2,12 +2,13 @@ import pytest
 from utils.urls import assert_valid_url
 from pages.article import ArticlePage
 
-ARTICLE_NAME = 'Send feedback on MDN'
+ARTICLE_NAME = 'Send feedback about MDN'
 ARTICLE_TITLE_SUFIX = " - The MDN project | MDN"
 
 
 @pytest.mark.smoke
 @pytest.mark.nondestructive
+@pytest.mark.maintenance_mode
 def test_location(base_url, selenium):
     article_page = ArticlePage(selenium, base_url).open()
     page = article_page.header.open_feedback()
@@ -18,6 +19,7 @@ def test_location(base_url, selenium):
 
 @pytest.mark.smoke
 @pytest.mark.nondestructive
+@pytest.mark.maintenance_mode
 def test_feedback_layout(base_url, selenium):
     page = ArticlePage(selenium, base_url).open()
     assert page.is_article_displayed
@@ -30,6 +32,7 @@ def test_feedback_layout(base_url, selenium):
 
 @pytest.mark.smoke
 @pytest.mark.nondestructive
+@pytest.mark.maintenance_mode
 def test_page_links(base_url, selenium):
     page = ArticlePage(selenium, base_url).open()
     # get all page links

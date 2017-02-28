@@ -7,6 +7,7 @@ TEST_LOCALE = 'fr'
 
 @pytest.mark.smoke
 @pytest.mark.nondestructive
+@pytest.mark.maintenance_mode
 def test_footer_language_selector(base_url, selenium):
     # open homepge
     page = HomePage(selenium, base_url).open()

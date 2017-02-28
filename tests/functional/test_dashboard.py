@@ -3,8 +3,10 @@ import pytest
 from pages.dashboard import DashboardPage
 from pages.admin import AdminLogin
 
+
 @pytest.mark.smoke
 @pytest.mark.nondestructive
+@pytest.mark.maintenance_mode
 def test_dashboard(base_url, selenium):
     page = DashboardPage(selenium, base_url).open()
     first_row = page.first_row
