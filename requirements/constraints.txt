@@ -246,9 +246,9 @@ pbr==1.8.1 \
     --hash=sha256:e2127626a91e6c885db89668976db31020f0af2da728924b56480fc7ccf09649
 
 # ndg-httpsclient
-pyOpenSSL==16.2.0 \
-    --hash=sha256:26ca380ddf272f7556e48064bbcd5bd71f83dfc144f3583501c7ddbd9434ee17 \
-    --hash=sha256:7779a3bbb74e79db234af6a08775568c6769b5821faecf6e2f4143edb227516e
+pyOpenSSL==17.5.0 \
+    --hash=sha256:07a2de1a54de07448732a81e38a55df7da109b2f47f599f8bb35b0cbec69d4bd \
+    --hash=sha256:2c10cfba46a52c0b0950118981d61e72c1e5b1aac451ca1bc77de1a679456773
 cryptography==1.6 \
     --hash=sha256:e831efaba4f48649c4f1fab21eab4b21fe350d42dfd4c824f186dd8f93501804 \
     --hash=sha256:f05445e5d4e0619f0652ff972fcb6aedc5600921e80435ec5d1b8df0d1b6e5ac \
