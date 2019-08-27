@@ -1,0 +1,46 @@
+sudo: required
+branches:
+    only:
+        - master
+cache: pip
+language: python
+python:
+    - "2.7"
+services:
+    - docker
+    - memcached
+env:
+    matrix:
+        - TOXENV=py27
+        - TOXENV=flake8
+        - TOXENV=docs
+        - TOXENV=locales DOCKER_COMPOSE_VERSION=1.9.0
+        - TOXENV=docker DOCKER_COMPOSE_VERSION=1.9.0 UID=0
+    global:
+        - DJANGO_SETTINGS_MODULE=kuma.settings.travis
+        - DEBIAN_FRONTEND=noninteractive
+        - DATABASE_URL=mysql://root:kuma@localhost:3306/kuma
+        - CFLAGS=-O0
+matrix:
+    allow_failures:
+        - env: TOXENV=locales DOCKER_COMPOSE_VERSION=1.9.0
+before_install:
+    - scripts/travis-install
+    - pip install -U pip
+install:
+    - pip install -r requirements/travis.txt
+    - if [[ $TOXENV == 'py27' ]]; then ansible-playbook -vvv --tags=mysql,pipeline --connection=local --inventory-file=provisioning/inventory provisioning/travis.yml; fi
+    - nvm install 6
+    - nvm use 6
+script: tox -v
+after_failure:
+    - dmesg | tail
+after_success:
+    - codecov
+notifications:
+    irc:
+        channels:
+            - "irc.mozilla.org#mdndev"
+        on_success: always
+        on_failure: always
+        use_notice: true
