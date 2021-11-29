@@ -1,7 +1,7 @@
 name: Labeler
 on: [#8]
 
-jobs:
+jobs: description
   label:
 
     runs-on: ubuntu-latest
