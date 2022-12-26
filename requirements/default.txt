@@ -294,9 +294,9 @@ URLObject==2.4.0 \
     --hash=sha256:f51272b12846db98af530b0a64f6593d2b1e8405f0aa580285b37ce8009b8d9c
 
 # Build wheel files for caching (recent pip installs them)
-wheel==0.29.0 \
-    --hash=sha256:ea8033fc9905804e652f75474d33410a07404c1a78dd3c949a66863bd1050ebd \
-    --hash=sha256:1ebb8ad7e26b448e9caa4773d2357849bf80ff9e313964bcaf79cbf0201a1648
+wheel==0.38.1 \
+    --hash=sha256:7a95f9a8dc0924ef318bd55b616112c70903192f524d120acc614f59547a9e1f \
+    --hash=sha256:ea041edf63f4ccba53ad6e035427997b3bb10ee88a4cd014ae82aeb9eea77bb9
 
 # Serve static files with compression, etc. from Django
 whitenoise==2.0.6 \
