@@ -29,10 +29,9 @@ pytz==2015.7 \
     --hash=sha256:99266ef30a37e43932deec2b7ca73e83c8dbc3b9ff703ec73eca6b1dae6befea \
     --hash=sha256:8b6ce1c993909783bc96e0b4f34ea223bff7a4df2c90bdb9c4e0f1ac928689e3
 # cryptography, django-honeypot
-setuptools==26.1.1 \
-    --hash=sha256:226c9ce65e76c6069e805982b036f36dc4b227b37dd87fc219aef721ec8604ae \
-    --hash=sha256:475ce28993d7cb75335942525b9fac79f7431a7f6e8a0079c0f2680641379481 \
-    --hash=sha256:02a06e1a547b16c25143d2bb898008286a3cbd600a7dbe47234ce57dc51abbf6
+setuptools==65.5.1 \
+    --hash=sha256:d0b9a8433464d5800cbe05094acf5c6d52a91bfac9b52bcfc4d41382be5d5d31 \
+    --hash=sha256:e197a19aa8ec9722928f2206f8de752def0e4c9fc6953527360d1c36d94ddb2f
 # bleach, django-appconf, django-cacheback, django-extensions, mock, etc.
 six==1.10.0 \
     --hash=sha256:0ff78c403d9bccf5a425a6d31a12aa6b47f1c21ca4dc2573a7e2f32a97335eb1 \
