@@ -1,7 +1,7 @@
 # This is a standalone requirements file for the documentation requirements
 # used by ReadTheDocs to set up the documentation rendering environment
 alabaster==0.7.7
-Babel==2.2.0
+Babel==2.9.1
 docutils==0.12
 Jinja2==2.7.3
 MarkupSafe==0.23
