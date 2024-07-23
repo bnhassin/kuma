@@ -3,7 +3,7 @@
 -r dev.txt
 
 # Mozilla's CA bundle
-certifi==2015.11.20.1 \
+certifi==2023.7.22.1 \
     --hash=sha256:ad86683448f7483d4147a64d96856e551734e594c4563747e9fbe2368df13d3f \
     --hash=sha256:30b0a7354a1b32caa8b4705d3f5fb2dadefac7ba4bf8af8a2176869f93e38f16
  
@@ -18,3 +18,4 @@ locustio==0.7.3 \
 #  python -c 'import requests; requests.get("https://sni.velox.ch")'
 ndg-httpsclient==0.4.2 \
     --hash=sha256:580987ef194334c50389e0d7de885fccf15605c13c6eecaabd8d6c43768eb8ac
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
