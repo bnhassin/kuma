@@ -3,7 +3,7 @@
 -r dev.txt
 
 # Mozilla's CA bundle
-certifi==2015.11.20.1 \
+certifi==2023.7.22.1 \
     --hash=sha256:ad86683448f7483d4147a64d96856e551734e594c4563747e9fbe2368df13d3f \
     --hash=sha256:30b0a7354a1b32caa8b4705d3f5fb2dadefac7ba4bf8af8a2176869f93e38f16
  
