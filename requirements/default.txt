@@ -183,7 +183,7 @@ Jinja2==2.8 \
     --hash=sha256:bc1ff2ff88dbfacefde4ddde471d1417d3b304e8df103a7a9437d47269201bf4
 
 # Serialize pickleable objects to JSON, used in feed processing
-jsonpickle==0.9.2 \
+jsonpickle==3.3.0 \
     --hash=sha256:09bf1978d1d004943c2a359009fb5d09b67277bbaaf9aed281856b3c063979e7
 
 # MySQL driver with Python 3 support
