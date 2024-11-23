@@ -1,4 +1,4 @@
-FROM mysql:5.6
+FROM mysql:5.7.44
 
 MAINTAINER MDN Developer <dev-mdn@lists.mozilla.org>
 ENV MYSQL_ROOT_PASSWORD kuma
