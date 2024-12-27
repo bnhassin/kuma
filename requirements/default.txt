@@ -178,7 +178,7 @@ importlib==1.0.3 \
     --hash=sha256:65f342a604a2e1028707c5e055266ab2431c26e20fe10780b423320870884dac
 
 # Improved template engine
-Jinja2==2.8 \
+Jinja2==3.1.5 \
     --hash=sha256:1cc03ef32b64be19e0a5b54578dd790906a34943fe9102cfdae0d4495bd536b4 \
     --hash=sha256:bc1ff2ff88dbfacefde4ddde471d1417d3b304e8df103a7a9437d47269201bf4
 
