@@ -167,7 +167,7 @@ google-api-python-client==1.5.1 \
     --hash=sha256:b32ab8e7337bc3a046506c1576d4987b30a52e5d40add6b0e9662e6dc1253b90
 
 # WSGI HTTP server
-gunicorn==19.5.0 \
+gunicorn==23.0.0 \
     --hash=sha256:44cda4183586467493deaa616ac16f42b2f33bfaa57d4d5c07999d6db78c40ec \
     --hash=sha256:1c62764ceea2d28602843e3e3abd459194f976b8f27627116787977ced47923f
 
