@@ -197,7 +197,7 @@ newrelic==2.60.0.46 \
     --hash=sha256:17d598fccca0845c0337e5276d40d65f951afea6adf9bd9172cff3a87f2ef294
 
 # Image identification and manipulation
-Pillow==3.2.0 \
+Pillow==10.2.0 \
     --hash=sha256:f6e89c3b024a13060de19732e82d1dfd657cdf46b15d647c0f0f5aaa07a6a419 \
     --hash=sha256:46cbc1d1487a9c590708e9e135530ac94af8373bf1e8ef0c7acf6cc46c84d3c4 \
     --hash=sha256:d6b2adbbe7dee2921495192aa1b7a1716fc54dd97398afed1a7b5198c0f5724a \
